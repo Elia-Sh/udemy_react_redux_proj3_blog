@@ -34,7 +34,7 @@ class PostsIndex extends Component {
 
 
     render() {
-        //Link is "tidied" to a anchor tag, meaning it generates <href> tag
+        //Link is "tied" to a anchor tag, meaning it generates <href> tag
         //TODO why the Link is to the "url" and not to PostNew component
         return (
             <div>
