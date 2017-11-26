@@ -22,8 +22,8 @@ class PostsIndex extends Component {
         console.log("within renderPosts ", this.props.posts);
         return this.props.posts.map((post) => {
             return (
-                <li className="list-groupd-item" key={post.id}>
-                    <span className="pull-sx-right">
+                <li className="list-group-item" key={post.id}>
+                    <span className="pull-xs-right">
                         {post.categories}
                     </span>
                     <strong>{post.title}</strong>
@@ -63,6 +63,7 @@ class PostsIndex extends Component {
 // }
 
 function mapStateToProps(state) {
+    console.log("in mapStateToProps, state is: ", state );
     return { posts: state.posts.all }
 }
 
